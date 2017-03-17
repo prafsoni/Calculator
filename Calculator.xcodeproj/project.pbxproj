@@ -15,6 +15,7 @@
 		0660DBAF1D19D79B001831E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660DBAD1D19D79B001831E1 /* LaunchScreen.storyboard */; };
 		0660DBBA1D19D79B001831E1 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660DBB91D19D79B001831E1 /* CalculatorTests.swift */; };
 		0660DBC51D19D79B001831E1 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660DBC41D19D79B001831E1 /* CalculatorUITests.swift */; };
+		0660DBD31D19E5DD001831E1 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660DBD21D19E5DD001831E1 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0660DBC01D19D79B001831E1 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0660DBC41D19D79B001831E1 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		0660DBC61D19D79B001831E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0660DBD21D19E5DD001831E1 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				0660DBA11D19D79B001831E1 /* AppDelegate.swift */,
 				0660DBA31D19D79B001831E1 /* ViewController.swift */,
+				0660DBD21D19E5DD001831E1 /* CalculatorBrain.swift */,
 				0660DBA51D19D79B001831E1 /* Main.storyboard */,
 				0660DBAB1D19D79B001831E1 /* Assets.xcassets */,
 				0660DBAD1D19D79B001831E1 /* LaunchScreen.storyboard */,
@@ -191,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = pksprojects;
 				TargetAttributes = {
 					0660DB9D1D19D79B001831E1 = {
@@ -270,6 +273,7 @@
 			files = (
 				0660DBA41D19D79B001831E1 /* ViewController.swift in Sources */,
 				0660DBA21D19D79B001831E1 /* AppDelegate.swift in Sources */,
+				0660DBD31D19E5DD001831E1 /* CalculatorBrain.swift in Sources */,
 				0660DBAA1D19D79B001831E1 /* Calculator.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,8 +344,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -363,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -388,8 +394,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -405,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -507,6 +515,7 @@
 				0660DBCB1D19D79B001831E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0660DBCC1D19D79B001831E1 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +524,7 @@
 				0660DBCE1D19D79B001831E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0660DBCF1D19D79B001831E1 /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +533,7 @@
 				0660DBD11D19D79B001831E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
